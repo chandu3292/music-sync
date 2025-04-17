@@ -1,4 +1,4 @@
-# 🎵 MuSync - Synchronized YouTube Audio Room
+# 🎵 MuSync - Synchronized YouTube Audio Rooms
 
 Welcome to MuSync, a real-time synchronized YouTube audio room application that allows multiple users to listen to the same music stream simultaneously. Built with **React**, **Tailwind CSS**, and the **YouTube Iframe API**, MuSync offers a seamless and modern experience with a classic dark green and black theme.
 
