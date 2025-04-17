@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Noto Serif', serif;
+    @apply bg-gradient-to-br from-black via-[#003300] to-[#001a00] text-[#d9e6d9] min-h-screen flex items-center justify-center p-4;
+}
+
+h1 {
+    @apply text-5xl font-bold text-[#e7f6e7] text-center mb-2 animate-fadeIn;
+}
+
+#tagline {
+    @apply text-2xl italic text-[#4a704a] mb-8 hover:text-[#6b946b] transition-colors;
+}
+
+input {
+    @apply bg-[#1a3c1a] text-[#d9e6d9] text-lg p-3 rounded-md border border-[#4a704a] w-full max-w-xs focus:outline-none focus:bg-[#2a4c2a] hover:transform hover:-translate-y-0.5 transition-all;
+}
+
+button {
+    @apply bg-[#2a4c2a] text-[#e7f6e7] text-lg px-6 py-3 rounded-md hover:bg-[#3a5c3a] hover:scale-105 active:scale-95 transition-all;
+}
+
+#search-results {
+    @apply w-full max-w-xs max-h-48 overflow-y-auto bg-[#1a3c1a] rounded-md border border-[#4a704a] p-2;
+}
+
+.result-item {
+    @apply p-2 cursor-pointer hover:bg-[#2a4c2a] border-b border-[#4a704a] last:border-b-0 text-[#d9e6d9];
+}
+
+#controls {
+    @apply flex space-x-4 my-4;
+}
+
+#seek-slider {
+    @apply w-full max-w-xs;
+}
+
+#room-status {
+    @apply text-lg text-[#6b946b] my-4;
+}
+
+#team-name {
+    @apply text-lg italic text-[#4a704a] mt-8 relative;
+}
+
+#team-name::before {
+    @apply content-[''] absolute top-0 left-1/2 transform -translate-x-1/2 w-10 h-px bg-[#4a704a];
+}
+
+@media (max-width: 600px) {
+    h1 {
+        @apply text-3xl;
+    }
+    #tagline {
+        @apply text-lg;
+    }
+    input, button {
+        @apply text-base p-2;
+    }
+    #search-results {
+        @apply max-w-[280px];
+    }
+}
