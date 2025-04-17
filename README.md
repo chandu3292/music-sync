@@ -21,25 +21,25 @@ Welcome to MuSync, a real-time synchronized YouTube audio room application that 
    git clone https://github.com/chandu3292/music-sync.git
    cd musync
 Install dependencies:
-bash
+```bash
 
-Copy
+
 npm install
 Resolve any security vulnerabilities:
-bash
+```bash
 
-Copy
+
 npm audit fix --force
 Usage
 Start the server:
-bash
+```bash
 
-Copy
+
 node server.js
 Start the development server:
-bash
+```bash
 
-Copy
+
 npm run dev
 Open your browser at http://localhost:5173 and connect multiple tabs or devices.
 Search for a video (e.g., "lofi hip hop"), click a result to play, and use the play/pause/seek controls.
